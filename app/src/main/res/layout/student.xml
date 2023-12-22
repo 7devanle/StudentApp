@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="50dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:background="#50ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_toEndOf="@+id/photo"
+        android:text="Full name"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+
+
+        android:layout_toRightOf="@+id/photo" />
+    <TextView
+        android:id="@+id/location"
+        android:background="#50ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_toEndOf="@+id/photo"
+        android:layout_below="@+id/name"
+        android:text="Location"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+
+        android:layout_toRightOf="@+id/photo" />
+    <TextView
+        android:id="@+id/department"
+        android:background="#50ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_toEndOf="@+id/photo"
+        android:layout_below="@+id/location"
+        android:text="Department"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/photo" />
+
+    <TextView
+        android:id="@+id/faculty"
+        android:background="#50ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_toEndOf="@+id/photo"
+        android:layout_below="@+id/department"
+        android:text="Faculty"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginBottom="25dp"
+        android:layout_toRightOf="@+id/photo" />
+
+</RelativeLayout>
